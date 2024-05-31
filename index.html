@@ -54,141 +54,165 @@
   </nav>
   <!-- NAVBAR -->
 
+  <!-- TITULO -->
   <div class="container rounded-4 mt-4 pt-4 fw" style="background-color: #1e70a6">
     <h1 style="color: #dcb8cb" class="fw-bold">TRIAGEM</h1>
-    
-    <!-- DADOS CLIENTE -->
-    <div class="row justify-content-center">
+    <!-- TITULO -->
       <!-- DADOS CLIENTE -->
-      <div class="col">
-        <div class="form-group" style="color: #dcb8cb">
-          <label for="nome">Nome:</label>
-          <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." />
+      <form action="page2.html">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="form-group" style="color: #dcb8cb">
+            <label for="nome">Nome:</label>
+            <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group pb-4" style="color: #dcb8cb">
+            <label for="sobrenome">Sobrenome:</label>
+            <input class="form-control" type="text" name="sobrenome" id="sobrenome"
+              placeholder="Digite o seu sobrenome..." />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group" style="color: #dcb8cb">
+            <label for="CPF">CPF:</label>
+            <input class="form-control" type="text" name="CPF" id="CPF" placeholder="Digite o seu CPF.">
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="form-group pb-4" style="color: #dcb8cb">
+            <label for="nascimento">Data de Nascimento:</label>
+            <input class="form-control" type="date" name="nascimento" id="nascimento"
+              placeholder="Digite sua data de nascimento.">
+          </div>
+
+        </div>
+        <div class="col-6">
+          <div class="form-group pb-4" style="color: #dcb8cb">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu email..." />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group pb-4" style="color: #dcb8cb">
+            <label for="tel">Telefone:</label>
+            <input class="form-control" type="text" name="tel" id="tel" placeholder="(00) 90000-0000" />
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="form-group pb-4" style="color: #dcb8cb">
-          <label for="sobrenome">Sobrenome:</label>
-          <input class="form-control" type="text" name="sobrenome" id="sobrenome"
-            placeholder="Digite o seu sobrenome..." />
+
+      <!-- DADOS CLIENTE -->
+
+      <!-- TIPO SANGUÍNEO -->
+      <div class="row justify-content-center">
+        <div class="form-group">
+          <p class="fw-bold" style="color: #dcb8cb">
+            Qual seria o seu grupo sanguíneo?
+          </p>
+          <select class="form-select " aria-label="Default select example">
+            <option selected>Selecione o seu tipo sanguíneo</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
         </div>
       </div>
-      <div class="col-6">
-        <div class="form-group" style="color: #dcb8cb">
-          <label for="CPF">CPF:</label>
-          <input class="form-control" type="text" name="CPF" id="CPF" placeholder="Digite o seu CPF.">
+      <!-- TIPO SANGUÍNEO -->
+
+      <!-- SINTOMAS | TABELA DE 6+AUTO -->
+      <div class="row justify-content-center">
+        <div>
+          <p class="fw-bold mt-4" style="color: #dcb8cb">
+            Nos últimos 14 dias, você já experimentou ou tem experimentado algum
+            dos seguintes sintomas?
+          </p>
         </div>
 
-      </div>
-      <div class="col">
-        <div class="form-group pb-4" style="color: #dcb8cb">
-          <label for="nascimento">Data de Nascimento:</label>
-          <input class="form-control" type="date" name="nascimento" id="nascimento"
-            placeholder="Digite sua data de nascimento.">
+        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="1" id="1" />
+          <label for="1">Tosse</label>
+        </div>
+        <div class="form-check col" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="2" id="2" />
+          <label for="2">Falta de Ar</label>
         </div>
 
-      </div>
-      <div class="col-6">
-        <div class="form-group pb-4" style="color: #dcb8cb">
-          <label for="email">Email:</label>
-          <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu email..." />
+        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="3" id="3" />
+          <label for="3">Dor de Garganta</label>
         </div>
-      </div>
-      <div class="col">
-        <div class="form-group pb-4" style="color: #dcb8cb">
-          <label for="tel">Telefone:</label>
-          <input class="form-control" type="text" name="tel" id="tel" placeholder="(00) 90000-0000" />
+        <div class="form-check col" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="4" id="4" />
+          <label for="4">Febre</label>
         </div>
-      </div>
-    </div>
-    <!-- DADOS CLIENTE -->
 
-    <!-- TIPO SANGUÍNEO -->
-    <div class="row justify-content-center">
-      <div class="form-group">
+        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="5" id="5" />
+          <label for="5">Dor de Cabeça</label>
+        </div>
+        <div class="form-check col" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="6" id="6" />
+          <label for="6">Perda de Apetite</label>
+        </div>
+
+        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="7" id="7" />
+          <label for="7">Sente Calafrios</label>
+        </div>
+        <div class="form-check col" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="8" id="8" />
+          <label for="8">Dores Musculares</label>
+        </div>
+
+        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="9" id="9" />
+          <label for="9">Vômitos</label>
+        </div>
+        <div class="form-check col" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="10" id="10" />
+          <label for="10">Fadiga</label>
+        </div>
+
+        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="11" id="11" />
+          <label for="11">Diarréia</label>
+        </div>
+        <div class="form-check col mb-3" style="color: #dcb8cb">
+          <input class="form-check-input" type="checkbox" value="12" id="12" />
+          <label for="12">Dor Abdominal</label>
+        </div>
+      </div>
+      <!-- SINTOMAS | TABELA DE 6+AUTO -->
+
+      <!-- TERMOS DE USO -->
+      <div class="row justify-content-center text-center">
         <p class="fw-bold" style="color: #dcb8cb">
-          Qual seria o seu grupo sanguíneo?
+          Confirmo que li e aceito os <a
+            class="link-light"
+            href="#">termos de uso</a>.?!!
         </p>
-        <select class="form-select " aria-label="Default select example">
-          <option selected>Selecione o seu tipo sanguíneo</option>
-          <option value="A+">A+</option>
-          <option value="A-">A-</option>
-          <option value="B+">B+</option>
-          <option value="B-">B-</option>
-          <option value="AB+">AB+</option>
-          <option value="AB-">AB-</option>
-          <option value="O+">O+</option>
-          <option value="O-">O-</option>
-        </select>
+        <div style="color: #dcb8cb" class="me-auto mb-2 mb-lg-0 d-fl">
+          <div class="text-center">
+            <label for="SIM">SIM</label>
+            <input class="form-check-input me-5" type="radio" name="termo" id="SIM" value="SIM" aria-label="...">
+            <label for="NÃO" class="ms-5">NÃO</label>
+            <input class="form-check-input" type="radio" name="termo" id="NÃO" value="NÃO" aria-label="...">
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- TIPO SANGUÍNEO -->
-
-    <!-- SINTOMAS | TABELA DE 6+AUTO -->
-    <div class="row justify-content-center">
-      <div>
-        <p class="fw-bold mt-4" style="color: #dcb8cb">
-          Nos últimos 14 dias, você já experimentou ou tem experimentado algum
-          dos seguintes sintomas?
-        </p>
+      <!-- TERMOS DE USO -->
+      <div class="form-group text-center mt-2">
+        <button type="submit" class="btn btn-primary mb-3">ENVIAR</button>
       </div>
-
-      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="1" id="1" />
-        <label for="1">Tosse</label>
-      </div>
-      <div class="form-check col" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="2" id="2" />
-        <label for="2">Falta de Ar</label>
-      </div>
-
-      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="3" id="3" />
-        <label for="3">Dor de Garganta</label>
-      </div>
-      <div class="form-check col" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="4" id="4" />
-        <label for="4">Febre</label>
-      </div>
-
-      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="5" id="5" />
-        <label for="5">Dor de Cabeça</label>
-      </div>
-      <div class="form-check col" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="6" id="6" />
-        <label for="6">Perda de Apetite</label>
-      </div>
-
-      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="7" id="7" />
-        <label for="7">Sente Calafrios</label>
-      </div>
-      <div class="form-check col" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="8" id="8" />
-        <label for="8">Dores Musculares</label>
-      </div>
-
-      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="9" id="9" />
-        <label for="9">Vômitos</label>
-      </div>
-      <div class="form-check col" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="10" id="10" />
-        <label for="10">Fadiga</label>
-      </div>
-
-      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="11" id="11" />
-        <label for="11">Diarréia</label>
-      </div>
-      <div class="form-check col mb-3" style="color: #dcb8cb">
-        <input class="form-check-input" type="checkbox" value="12" id="12" />
-        <label for="12">Dor Abdominal</label>
-      </div>
-    </div>
-    <!-- SINTOMAS | TABELA DE 6+AUTO -->
-
+      <div class="alert alert-danger d-none">Preencha o campo XXXXX</div>
+    </form>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
