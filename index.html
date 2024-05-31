@@ -1,171 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIVA A VIDA</title>
-    <!-- ARQUIVO DO BOOTSTRAP-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-  </head>
 
-  <body style="background-color: #faf9f1">
-    <!--NAVBAR INICIO  -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #1e70a6">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#" style="color: #dcb8cb">
-          <img
-            src="img/logo.png"
-            alt="Logo"
-            height="80"
-            class="d-inline-block align-text-center"
-          />
-          CLÍNICA VIVA
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                style="color: #dcb8cb"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: #dcb8cb" href="#">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" style="color: #dcb8cb" href="#"
-                >Marcar Consulta</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: #dcb8cb" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: #dcb8cb" href="#"
-                >Fale Conosco</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: #dcb8cb" href="#">Login</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Pesquisar"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light" type="submit">
-              Pesquisar
-            </button>
-          </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVA A VIDA</title>
+  <!-- ARQUIVO DO BOOTSTRAP-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- ARQUIVO DO BOOTSTRAP-->
+</head>
+
+<body style="background-color: #faf9f1">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #1e70a6">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#" style="color: #dcb8cb">
+        <img src="img/logo.png" alt="Logo" height="80" class="d-inline-block align-text-center" />
+        CLÍNICA VIVA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #dcb8cb" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #dcb8cb" href="#">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" style="color: #dcb8cb" href="#">Marcar Consulta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #dcb8cb" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #dcb8cb" href="#">Fale Conosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #dcb8cb" href="#">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+          <button class="btn btn-outline-light" type="submit">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <div class="container rounded-4 mt-4 pt-4 fw" style="background-color: #1e70a6">
+    <h1 style="color: #dcb8cb" class="fw-bold">TRIAGEM</h1>
+    
+    <!-- DADOS CLIENTE -->
+    <div class="row justify-content-center">
+      <!-- DADOS CLIENTE -->
+      <div class="col">
+        <div class="form-group" style="color: #dcb8cb">
+          <label for="nome">Nome:</label>
+          <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." />
         </div>
       </div>
-    </nav>
+      <div class="col-6">
+        <div class="form-group pb-4" style="color: #dcb8cb">
+          <label for="sobrenome">Sobrenome:</label>
+          <input class="form-control" type="text" name="sobrenome" id="sobrenome"
+            placeholder="Digite o seu sobrenome..." />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group" style="color: #dcb8cb">
+          <label for="CPF">CPF:</label>
+          <input class="form-control" type="text" name="CPF" id="CPF" placeholder="Digite o seu CPF.">
+        </div>
 
-    <!-- FORM -->
-    <div
-      class="container rounded-4 mt-4 pt-4 fw"
-      style="background-color: #1e70a6"
-    >
-      <h1 style="color: #dcb8cb" class="fw-bold">TRIAGEM</h1>
-      <div class="row justify-content-center">
-        <!-- PRIMEIRA LINHA -->
-        <div class="col">
-          <div class="form-group" style="color: #dcb8cb">
-            <label for="nome">Nome:</label>
-            <input
-              class="form-control"
-              type="text"
-              name="nome"
-              id="nome"
-              placeholder="Digite o seu nome..."
-            />
-          </div>
+      </div>
+      <div class="col">
+        <div class="form-group pb-4" style="color: #dcb8cb">
+          <label for="nascimento">Data de Nascimento:</label>
+          <input class="form-control" type="date" name="nascimento" id="nascimento"
+            placeholder="Digite sua data de nascimento.">
         </div>
-        <div class="col-6">
-          <div class="form-group pb-4" style="color: #dcb8cb">
-            <label for="sobrenome">Sobrenome:</label>
-            <input
-              class="form-control"
-              type="text"
-              name="sobrenome"
-              id="sobrenome"
-              placeholder="Digite o seu sobrenome..."
-            />
-          </div>
+
+      </div>
+      <div class="col-6">
+        <div class="form-group pb-4" style="color: #dcb8cb">
+          <label for="email">Email:</label>
+          <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu email..." />
         </div>
-        <!-- SEGUNDA LINHA -->
-        <div class="col-6">
-          <div class="form-group" style="color: #dcb8cb">
-            <label for="CPF">CPF:</label>
-            <input 
-              class="form-control"
-              type="text"
-              name="CPF"
-              id="CPF"
-              placeholder="Digite o seu CPF.">
-          </div>
+      </div>
+      <div class="col">
+        <div class="form-group pb-4" style="color: #dcb8cb">
+          <label for="tel">Telefone:</label>
+          <input class="form-control" type="text" name="tel" id="tel" placeholder="(00) 90000-0000" />
         </div>
-        <div class="col">
-          <div class="form-group pb-4" style="color: #dcb8cb">
-            <label for="nascimento">Data de Nascimento:</label>
-            <input 
-              class="form-control"
-              type="date"
-              name="nascimento"
-              id="nascimento"
-              placeholder="Digite sua data de nascimento.">
-          </div>
-        </div>
-        <!-- TERCEIRA LINHA -->
-        <div class="col-6">
-          <div class="form-group pb-4" style="color: #dcb8cb">
-            <label for="email">Email:</label>
-            <input
-              class="form-control"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Digite o seu email..."
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-group pb-4" style="color: #dcb8cb">
-            <label for="tel">Telefone:</label>
-            <input
-              class="form-control"
-              type="text"
-              name="tel"
-              id="tel"
-              placeholder="(00) 90000-0000"
-            />
-          </div>
-        </div>
-        <!-- SELECT BOX -->
-        <div class="form-group">
-          <!-- SELECT BOX -->
-          <p class="fw-bold" style="color: #dcb8cb">
-            Qual seria o seu grupo sanguíneo?
-          </p>
-          <select class="form-select "
-          aria-label="Default select example" >
+      </div>
+    </div>
+    <!-- DADOS CLIENTE -->
+
+    <!-- TIPO SANGUÍNEO -->
+    <div class="row justify-content-center">
+      <div class="form-group">
+        <p class="fw-bold" style="color: #dcb8cb">
+          Qual seria o seu grupo sanguíneo?
+        </p>
+        <select class="form-select " aria-label="Default select example">
           <option selected>Selecione o seu tipo sanguíneo</option>
           <option value="A+">A+</option>
           <option value="A-">A-</option>
@@ -175,72 +119,77 @@
           <option value="AB-">AB-</option>
           <option value="O+">O+</option>
           <option value="O-">O-</option>
-          </select>
-        </div>
-
-        <!-- CHECK BOX -->
-        <div>
-          <p class="fw-bold mt-4" style="color: #dcb8cb">
-            Nos últimos 14 dias, você já experimentou ou tem experimentado algum
-            dos seguintes sintomas?
-          </p>
-        </div>
-
-        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="1" id="1" />
-          <label for="1">Tosse</label>
-        </div>
-        <div class="form-check col" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="2" id="2" />
-          <label for="2">Falta de Ar</label>
-        </div>
-
-        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="3" id="3" />
-          <label for="3">Dor de Garganta</label>
-        </div>
-        <div class="form-check col" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="4" id="4" />
-          <label for="4">Febre</label>
-        </div>
-
-        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="5" id="5" />
-          <label for="5">Dor de Cabeça</label>
-        </div>
-        <div class="form-check col" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="6" id="6" />
-          <label for="6">Perda de Apetite</label>
-        </div>
-
-        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="7" id="7" />
-          <label for="7">Sente Calafrios</label>
-        </div>
-        <div class="form-check col" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="8" id="8" />
-          <label for="8">Dores Musculares</label>
-        </div>
-
-        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="9" id="9" />
-          <label for="9">Vômitos</label>
-        </div>
-        <div class="form-check col" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="10" id="10" />
-          <label for="10">Fadiga</label>
-        </div>
-
-        <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="11" id="11" />
-          <label for="11">Diarréia</label>
-        </div>
-        <div class="form-check col mb-3" style="color: #dcb8cb">
-          <input class="form-check-input" type="checkbox" value="12" id="12" />
-          <label for="12">Dor Abdominal</label>
-        </div>
-
+        </select>
       </div>
+    </div>
+    <!-- TIPO SANGUÍNEO -->
+
+    <!-- SINTOMAS | TABELA DE 6+AUTO -->
+    <div class="row justify-content-center">
+      <div>
+        <p class="fw-bold mt-4" style="color: #dcb8cb">
+          Nos últimos 14 dias, você já experimentou ou tem experimentado algum
+          dos seguintes sintomas?
+        </p>
+      </div>
+
+      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="1" id="1" />
+        <label for="1">Tosse</label>
+      </div>
+      <div class="form-check col" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="2" id="2" />
+        <label for="2">Falta de Ar</label>
+      </div>
+
+      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="3" id="3" />
+        <label for="3">Dor de Garganta</label>
+      </div>
+      <div class="form-check col" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="4" id="4" />
+        <label for="4">Febre</label>
+      </div>
+
+      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="5" id="5" />
+        <label for="5">Dor de Cabeça</label>
+      </div>
+      <div class="form-check col" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="6" id="6" />
+        <label for="6">Perda de Apetite</label>
+      </div>
+
+      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="7" id="7" />
+        <label for="7">Sente Calafrios</label>
+      </div>
+      <div class="form-check col" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="8" id="8" />
+        <label for="8">Dores Musculares</label>
+      </div>
+
+      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="9" id="9" />
+        <label for="9">Vômitos</label>
+      </div>
+      <div class="form-check col" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="10" id="10" />
+        <label for="10">Fadiga</label>
+      </div>
+
+      <div class="form-check ms-3 me-2 col-6" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="11" id="11" />
+        <label for="11">Diarréia</label>
+      </div>
+      <div class="form-check col mb-3" style="color: #dcb8cb">
+        <input class="form-check-input" type="checkbox" value="12" id="12" />
+        <label for="12">Dor Abdominal</label>
+      </div>
+    </div>
+    <!-- SINTOMAS | TABELA DE 6+AUTO -->
+
     <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
