@@ -8,6 +8,7 @@
   <!-- ARQUIVO DO BOOTSTRAP-->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- ARQUIVO DO BOOTSTRAP-->
+  <script type="text/javascript" src="js/formulario.js"></script>
 </head>
 
 <body style="background-color: #faf9f1">
@@ -59,12 +60,13 @@
     <h1 style="color: #dcb8cb" class="fw-bold">TRIAGEM</h1>
     <!-- TITULO -->
       <!-- DADOS CLIENTE -->
-      <form action="page2.html">
+      <div id="erro"></div>
+      <form action="/" method="get" id="form">
       <div class="row justify-content-center">
         <div class="col">
           <div class="form-group" style="color: #dcb8cb">
             <label for="nome">Nome:</label>
-            <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." />
+            <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." required/>
           </div>
         </div>
         <div class="col-6">
@@ -77,7 +79,7 @@
         <div class="col-6">
           <div class="form-group" style="color: #dcb8cb">
             <label for="CPF">CPF:</label>
-            <input class="form-control" type="text" name="CPF" id="CPF" placeholder="Digite o seu CPF.">
+            <input class="form-control" type="text" name="CPF" id="CPF" placeholder="Digite o seu CPF...">
           </div>
 
         </div>
@@ -209,10 +211,12 @@
       </div>
       <!-- TERMOS DE USO -->
       <div class="form-group text-center mt-2">
-        <button type="submit" class="btn btn-primary mb-3">ENVIAR</button>
+      <!-- BOTAO ENVIAR -->
+        <button onclick="enviou()" type="submit" class="btn btn-primary mb-3">ENVIAR</button>
       </div>
-      <div class="alert alert-danger d-none">Preencha o campo XXXXX</div>
-    </form>
+          </form>
+      <div class="alert alert-danger d-none text-center">Preencha o campo XXXXX</div>
+
     <script src="js/bootstrap.min.js"></script>
 </body>
 
